@@ -1,8 +1,9 @@
-import Section2 from "./section-2";
-
-const Section1 = () => {
+import InfoSec1 from "./info-sec-1";
+import { CiTwitter } from "react-icons/ci";
+const SectionInfo = () => {
   return (
-    <div className=" mt-24 ml-48 items-center">
+  <div className="flex justify-between px-28">
+    <div className=" mt-24 items-center">
       <h2 className="text-6xl font-bold">Hi, I’m Tom 👋 </h2>
       <p className="mt-2 text-4 text-gray-600 font-normal">
         I specialize in full stack development, particularly with React.js and
@@ -14,9 +15,15 @@ const Section1 = () => {
         development, I continue to find joy in crafting innovative solutions and
         designs.
       </p>
-      <Section2 />
+      <InfoSec1/>  
     </div>
+    <div className="mt-24">
+      <img src="./images/Pic.png" alt="" />
+    </div> 
+   
+  </div>
+ 
   );
 };
 
-export default Section1;
+export default SectionInfo;

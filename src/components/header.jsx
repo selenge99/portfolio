@@ -10,7 +10,7 @@ const Header = () => {
     { name: "Contact", link: "#contact" },
   ];
   return (
-    <header className="flex justify-around mt-4">
+    <header className="flex justify-between px-28 mt-4">
       <div>
         <h1 className="text-3xl text-gray-900 font-black">TOM</h1>
       </div>
