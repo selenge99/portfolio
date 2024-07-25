@@ -1,6 +1,6 @@
 const SectionAbout = () => {
   return (
-    <div className="bg-gray-50 mt-24">
+    <div className="bg-gray-50 mt-24 h-[826px]">
       <div className="flex justify-center">
         <p className="bg-slate-300 rounded-xl text-sm text-gray-600 py-1 px-5 mt-24">
           About me
