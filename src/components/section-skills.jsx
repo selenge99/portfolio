@@ -1,6 +1,25 @@
+const imgList = [
+  { label: "Javascript", url: "./images/js.png" },
+  { label: "Typescript", url: "./images/typescript.png" },
+  { label: "React", url: "./images/icon-react.png" },
+  { label: "Next.js", url: "./images/icon-nextjs.png" },
+  { label: "Node.js", url: "./images/icon-nodejs.png" },
+  { label: "Express.js", url: "./images/icon-express.png" },
+  { label: "Nest.js", url: "./images/icon-nest.png" },
+  { label: "Socket.io", url: "./images/icon-socket.png" },
+  { label: "PostgreSQL", url: "./images/icon-postgresql.png" },
+  { label: "MongoDB", url: "./images/icon-mongodb.png" },
+  { label: "Sass/Scss", url: "./images/icon-sass.png" },
+  { label: "Tailwindcss", url: "./images/icon-tailwindcss.png" },
+  { label: "Figma", url: "./images/icon-figma.png" },
+  { label: "Cypress", url: "./images/icon-cypress.png" },
+  { label: "Storybook", url: "./images/icon-storybook.png" },
+  { label: "Git", url: "./images/icon-git.png" },
+];
+
 const SectionSkills = () => {
   return (
-    <div className="">
+    <div className="bg-white dark:bg-gray-950">
       <div className="flex justify-center">
         <p className="bg-slate-300 rounded-xl text-sm text-gray-600 py-1 px-5 mt-24">
           Skills
@@ -9,25 +28,19 @@ const SectionSkills = () => {
       <div className="flex justify-center mt-4">
         <h1>The skills, tools and technologies I am really good at:</h1>
       </div>
-      <div className="flex justify-center gap-[88.87px] mt-[92px]">
-        <img src="./images/Tech.png" alt="" />
-        <img src="./images/Tech2.png" alt="" />
-        <img src="./images/Tech3.png" alt="" />
-        <img src="./images/Tech4.png" alt="" />
-        <img src="./images/Tech5.png" alt="" />
-        <img src="./images/Tech6.png" alt="" />
-        <img src="./images/Tech7.png" alt="" />
-        <img src="./images/Tech8.png" alt="" />
-      </div>
-      <div className="flex justify-center gap-[88.87px] mt-12 mb-24">
-        <img src="./images/Tech10.png" alt="" />
-        <img src="./images/Tech11.png" alt="" />
-        <img src="./images/Tech12.png" alt="" />
-        <img src="./images/Tech9.png" alt="" />
-        <img src="./images/Tech13.png" alt="" />
-        <img src="./images/Tech16.png" alt="" />
-        <img src="./images/Tech14.png" alt="" />
-        <img src="./images/Tech15.png" alt="" />
+
+      <div
+        className="flex 
+      "
+      >
+        {imgList.map((imgData) => {
+          return (
+            <div>
+              <img className="" src={imgData.url} alt="" />
+              <p className="mt-2 text-gray-600"> {imgData.label}</p>
+            </div>
+          );
+        })}
       </div>
     </div>
   );
