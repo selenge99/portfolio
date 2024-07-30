@@ -1,4 +1,5 @@
 import CompaniesInfo from "./companyinfo";
+import LabelTag from "./label-tag";
 
 const companyInfo = [
   {
@@ -21,8 +22,13 @@ const companyInfo = [
 const Section5 = () => {
   return (
     <section>
+   <div className="items-center">
+    <LabelTag label="Work"/>
+    <p>Some of the noteworthy projects I have built:</p>
+   </div>
       <CompaniesInfo companyInfo={companyInfo} />
-    </section>
+      
+      </section>
   );
 };
 export default Section5;

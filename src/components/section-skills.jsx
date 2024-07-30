@@ -30,7 +30,7 @@ const SectionSkills = () => {
       </div>
 
       <div
-        className="flex 
+        className="grid grid-cols-8 gap-22
       "
       >
         {imgList.map((imgData) => {

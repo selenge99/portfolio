@@ -16,7 +16,7 @@ const Header = () => {
   const {theme, setTheme} = useTheme();
 
   return (
-    <header className="flex justify-between px-28 mt-4">
+    <header className="flex justify-between px-28 mt-4 w-360">
       <div>
         <h1 className="text-3xl text-gray-900 font-black">TOM</h1>
       </div>
@@ -24,18 +24,18 @@ const Header = () => {
         <NavLinks pages={pages} />
         <div className="flex items-center gap-4">
           { theme === "light" ? (
-            <MdOutlineLightMode 
+            <MdOutlineLightMode size={24} 
             className="hover:cursor-pointer" 
             onClick={()=>{
               setTheme("dark");
             }}
              />
             ):(
-              <MdDarkMode className="hover:cursor-pointer" onClick={()=>{
+              <MdDarkMode size={24} className="hover:cursor-pointer" onClick={()=>{
                 setTheme("light");
               }}
                /> 
-            )};
+            )}
           
           <button className="bg-black text-white py-[6px] px-4 rounded-2xl dark:bg-white dark:text-black">
             Download CV
